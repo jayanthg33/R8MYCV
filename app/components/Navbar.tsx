@@ -4,7 +4,9 @@ const Navbar = () => {
   return (
     <nav className="navbar flex justify-between items-center py-4 px-6">
       <Link to="/" className="hover:opacity-90 transition-opacity">
-        <p className="text-2xl font-bold text-gradient">R8MyCV</p>
+        <p className="text-2xl font-bold bg-gradient-to-r from-purple-400 to-pink-600 bg-clip-text text-transparent">
+          R8MyCV
+        </p>
       </Link>
 
       <Link

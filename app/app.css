@@ -28,7 +28,8 @@ main {
 }
 
 h1 {
-  @apply text-6xl text-gradient leading-tight tracking-[-2px] font-semibold;
+  /* text-gradient replaced with direct Tailwind utilities */
+  @apply text-6xl bg-clip-text text-transparent bg-gradient-to-r from-[#AB8C95] via-[#000000] to-[#8E97C5] leading-tight tracking-[-2px] font-semibold;
 }
 
 h2 {
@@ -49,6 +50,7 @@ form {
 }
 
 @layer components {
+  /* Optional — you can still use .text-gradient in JSX if desired */
   .text-gradient {
     @apply bg-clip-text text-transparent bg-gradient-to-r from-[#AB8C95] via-[#000000] to-[#8E97C5];
   }
